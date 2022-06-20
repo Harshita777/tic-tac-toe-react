@@ -29,7 +29,7 @@ const App = () => {
       itemArray[1] === itemArray[2] &&
       itemArray[2] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[2]} wins`);
+      return setWinMessage(`${itemArray[2]} Wins`);
     }
 
     if (
@@ -37,7 +37,7 @@ const App = () => {
       itemArray[4] === itemArray[5] &&
       itemArray[5] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[5]} wins`);
+      return setWinMessage(`${itemArray[5]} Wins`);
     }
 
     if (
@@ -45,7 +45,7 @@ const App = () => {
       itemArray[7] === itemArray[8] &&
       itemArray[8] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[8]} wins`);
+      return setWinMessage(`${itemArray[8]} Wins`);
     }
 
     if (
@@ -53,7 +53,7 @@ const App = () => {
       itemArray[3] === itemArray[6] &&
       itemArray[6] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[6]} wins`);
+      return setWinMessage(`${itemArray[6]} Wins`);
     }
 
     if (
@@ -61,7 +61,7 @@ const App = () => {
       itemArray[4] === itemArray[7] &&
       itemArray[7] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[7]} wins`);
+      return setWinMessage(`${itemArray[7]} Wins`);
     }
 
     if (
@@ -69,7 +69,7 @@ const App = () => {
       itemArray[5] === itemArray[8] &&
       itemArray[8] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[8]} wins`);
+      return setWinMessage(`${itemArray[8]} Wins`);
     }
 
     if (
@@ -77,7 +77,7 @@ const App = () => {
       itemArray[4] === itemArray[8] &&
       itemArray[8] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[8]} wins`);
+      return setWinMessage(`${itemArray[8]} Wins`);
     }
 
     if (
@@ -85,7 +85,7 @@ const App = () => {
       itemArray[4] === itemArray[2] &&
       itemArray[2] !== "empty"
     ) {
-      return setWinMessage(`${itemArray[2]} wins`);
+      return setWinMessage(`${itemArray[2]} Wins`);
     }
   }
 
@@ -95,7 +95,7 @@ const App = () => {
     }
 
     if(itemArray[itemNumber]=== "empty"){
-      itemArray[itemNumber] = isCross ? "cross" : "circle"
+      itemArray[itemNumber] = isCross ? "Cross" : "Circle"
       setIsCross(!isCross)
     }else{
       return toast("already filled", {type:"error"})
@@ -120,7 +120,7 @@ const App = () => {
             </div>
         ) :(
           <h1 className="text-center text-warning">
-            {isCross ? "Cross" :"Circle" }turns   
+            {isCross ? "Cross " :"Circle " }turn  
           </h1>
         )}
           <div className="grid">
